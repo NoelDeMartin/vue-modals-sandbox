@@ -1,5 +1,5 @@
 <template>
-  <Dialog :open="modal.visible.value" @update:open="$event || close()">
+  <Dialog :open="visible" @update:open="$event || close()">
     <DialogContent>
       <slot />
 
@@ -10,13 +10,8 @@
 
 <script setup lang="ts">
 import { Dialog, DialogContent } from '@/components/ui/dialog'
-import { useModal, ModalComponent } from '@noeldemartin/vue-modals'
+import { ModalComponent } from '@noeldemartin/vue-modals'
+import { useModal } from './utils'
 
-const { child, ...modal } = useModal({ removeOnClose: false })
-
-function close() {
-  modal.close()
-
-  setTimeout(() => modal.remove(), 300)
-}
+const { child, visible, close } = useModal()
 </script>
