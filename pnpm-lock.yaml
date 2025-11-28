@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@noeldemartin/vue-modals':
-        specifier: ^0.1.0
-        version: 0.1.0(vue@3.5.25(typescript@5.9.3))
+        specifier: next
+        version: 0.1.1-next.7e0922198c3771b22d686a61fc0c5784139088cd(vue@3.5.25(typescript@5.9.3))
       '@vueuse/core':
         specifier: ^14.1.0
         version: 14.1.0(vue@3.5.25(typescript@5.9.3))
@@ -408,8 +408,8 @@ packages:
   '@noeldemartin/utils@0.7.2':
     resolution: {integrity: sha512-82ndMnqKRXbaIKUwNfY2x1K3fdUsgGwLEGyIP+rVlXgkJawnTZ3RUlo5Pfy9HvU3IBlt57GcqKbC93OHMPWmTQ==}
 
-  '@noeldemartin/vue-modals@0.1.0':
-    resolution: {integrity: sha512-74R0TBz6NRkgI+o9gOYsXkbSce/AzpjGeaBpA6ae4skImJeAylu2n28H5hINXtCw7OzeTVQY/6sss7+XKYiHhA==}
+  '@noeldemartin/vue-modals@0.1.1-next.7e0922198c3771b22d686a61fc0c5784139088cd':
+    resolution: {integrity: sha512-sP3PPBYGsRSh4dc5I8R+aj4Yi1gVn5NeojTbMLnJke98R3hrKWsauMh3yi7ydumi9Nfy/DX32W1NryN0yaqQ+g==}
     peerDependencies:
       vue: '*'
 
@@ -770,8 +770,8 @@ packages:
     resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
     engines: {node: '>=10'}
 
-  baseline-browser-mapping@2.8.31:
-    resolution: {integrity: sha512-a28v2eWrrRWPpJSzxc+mKwm0ZtVx/G8SepdQZDArnXYU/XS+IF6mp8aB/4E+hH1tyGCoDo3KlUCdlSxGDsRkAw==}
+  baseline-browser-mapping@2.8.32:
+    resolution: {integrity: sha512-OPz5aBThlyLFgxyhdwf/s2+8ab3OvT7AdTNvKHBwpXomIYeXqpUUuT8LrdtxZSsWJ4R4CU1un4XGh5Ez3nlTpw==}
     hasBin: true
 
   birpc@2.8.0:
@@ -1634,7 +1634,7 @@ snapshots:
     dependencies:
       idb: 8.0.3
 
-  '@noeldemartin/vue-modals@0.1.0(vue@3.5.25(typescript@5.9.3))':
+  '@noeldemartin/vue-modals@0.1.1-next.7e0922198c3771b22d686a61fc0c5784139088cd(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@noeldemartin/utils': 0.7.2
       vue: 3.5.25(typescript@5.9.3)
@@ -1982,13 +1982,13 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  baseline-browser-mapping@2.8.31: {}
+  baseline-browser-mapping@2.8.32: {}
 
   birpc@2.8.0: {}
 
   browserslist@4.28.0:
     dependencies:
-      baseline-browser-mapping: 2.8.31
+      baseline-browser-mapping: 2.8.32
       caniuse-lite: 1.0.30001757
       electron-to-chromium: 1.5.262
       node-releases: 2.0.27
