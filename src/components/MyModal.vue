@@ -3,7 +3,7 @@
     <DialogHeader>
       <DialogTitle>{{ question }}</DialogTitle>
     </DialogHeader>
-    <form @submit.prevent="close({ answer })">
+    <form @submit.prevent="$emit('close', { answer })">
       <Input name="answer" v-model="answer" />
       <Button class="w-full mt-4">Submit</Button>
     </form>
@@ -14,7 +14,7 @@
 import { Button } from './ui/button'
 import { DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
-import { Modal, useModal } from '@/components/ui/modal'
+import { Modal } from '@/components/ui/modal'
 import { ref } from 'vue'
 
 type Payload = { answer: string }
@@ -22,6 +22,5 @@ type Payload = { answer: string }
 defineEmits<{ close: [Payload] }>()
 defineProps<{ question: string }>()
 
-const { close } = useModal<Payload>()
 const answer = ref('')
 </script>
