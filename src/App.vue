@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import MyModal from './components/MyModal.vue'
-import { showModal } from '@noeldemartin/vue-modals'
-import { Button } from './components/ui/button'
-import { ModalsPortal } from './components/ui/modal'
-import { ref } from 'vue'
+import { showModal } from '@noeldemartin/vue-modals';
+import { ref } from 'vue';
 
-const modalAnswer = ref<string | undefined>()
+import MyModal from './components/MyModal.vue';
+import { Button } from './components/ui/button';
+import { ModalsPortal } from './components/ui/modal';
+
+const modalAnswer = ref<string | undefined>();
 
 async function openModal() {
   const { answer } = await showModal(MyModal, {
     question: 'How many golf balls fit into a Boeing 747?',
-  })
+  });
 
-  modalAnswer.value = answer
+  modalAnswer.value = answer;
 }
 </script>
 

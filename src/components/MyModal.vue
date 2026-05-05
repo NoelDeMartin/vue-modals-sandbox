@@ -11,16 +11,18 @@
 </template>
 
 <script setup lang="ts">
-import { Button } from './ui/button'
-import { DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
-import { Modal } from '@/components/ui/modal'
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-type Payload = { answer: string }
+import { DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Input } from '@/components/ui/input';
+import { Modal } from '@/components/ui/modal';
 
-defineEmits<{ close: [Payload] }>()
-defineProps<{ question: string }>()
+import { Button } from './ui/button';
 
-const answer = ref('')
+type Payload = { answer: string };
+
+defineEmits<{ close: [Payload] }>();
+defineProps<{ question: string }>();
+
+const answer = ref('');
 </script>

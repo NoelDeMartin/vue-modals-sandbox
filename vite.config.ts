@@ -1,14 +1,17 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath } from 'node:url';
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from '@tailwindcss/vite';
+import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/vue-modals-sandbox/' : '/',
   plugins: [vue(), tailwindcss()],
+  fmt: { semi: true, singleQuote: true, sortImports: true },
+  lint: { options: { typeAware: true, typeCheck: true } },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-})
+});

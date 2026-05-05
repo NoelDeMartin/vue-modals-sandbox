@@ -9,9 +9,11 @@
 </template>
 
 <script setup lang="ts">
-import { Dialog, DialogContent } from '@/components/ui/dialog'
-import { ModalComponent } from '@noeldemartin/vue-modals'
-import { useModal } from './utils'
+import { ModalComponent } from '@noeldemartin/vue-modals';
 
-const { child, visible, close } = useModal()
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+
+import { useModal } from './utils';
+
+const { child, visible, close } = useModal();
 </script>
