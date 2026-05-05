@@ -5,6 +5,6 @@ Sample project to try the [@noeldemartin/vue-modals](https://github.com/NoelDeMa
 Start the project with the following commands:
 
 ```sh
-pnpm install
-pnpm dev
+vp install
+vp dev
 ```
